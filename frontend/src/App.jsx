@@ -220,7 +220,7 @@ function App() {
       <header className="app-header">
         <div className="logo-container">
           <Video className="logo-icon" />
-          <h1 className="logo-text">Thumbnail AI</h1>
+          <h1 className="logo-text">Youtube Thumbnail Generation</h1>
         </div>
         <div className="status-indicator">
           {jobStatus && (
