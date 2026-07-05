@@ -36,4 +36,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(router)
+@app.get("/")
+def read_root():
+    return {"status": "healthy", "message": "YouTube Thumbnail Generator API is running!"}
+
+app.include_router(router)
