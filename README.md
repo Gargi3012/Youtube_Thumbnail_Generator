@@ -66,6 +66,7 @@ A web application that generates customized, professional YouTube thumbnails by 
 4. Open `http://localhost:5173/` in your browser. All requests to `/api` will be proxied automatically to `http://localhost:8000`.
 
 ---
+<img width="863" height="448" alt="ss" src="https://github.com/user-attachments/assets/aac61fea-90cf-49ae-8647-083a3657393e" />
 
 ## API Endpoints
 * `POST /api/upload-headshot` - Uploads headshot images to ImageKit.
