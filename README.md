@@ -2,6 +2,8 @@
 
 A web application that generates customized, professional YouTube thumbnails by merging user headshots with AI-generated scenes. The application uses a FastAPI backend with SQLModel and a React (Vite) frontend, integrating OpenAI's DALL-E and ImageKit.io for asset hosting.
 
+**Live Demo:** [https://youtube-thumbnail-generator-black.vercel.app/](https://youtube-thumbnail-generator-black.vercel.app/)
+
 ## Technology Stack
 
 ### Backend
