@@ -37,8 +37,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
-def read_root():
+from fastapi.staticfiles import StaticFiles
+
+@app.get("/api/health")
+def health_check():
     return {"status": "healthy", "message": "YouTube Thumbnail Generator API is running!"}
 
-app.include_router(router)
+app.include_router(router)
+
+# Mount frontend static files to serve the frontend on the same port (8000)
+frontend_dist = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "frontend", "dist")
+if os.path.exists(frontend_dist):
+    app.mount("/", StaticFiles(directory=frontend_dist, html=True), name="static")
+else:
+    @app.get("/")
+    def read_root():
+        return {"status": "healthy", "message": "YouTube Thumbnail Generator API is running (frontend not built)!"}
+
