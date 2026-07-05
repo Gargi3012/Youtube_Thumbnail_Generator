@@ -7,7 +7,7 @@ import {
   CheckCircle, 
   AlertCircle, 
   Loader2, 
-  Youtube,
+  Video,
   Image as ImageIcon
 } from 'lucide-react';
 import { uploadHeadshot, createJob, getJobStatus, streamJobStatus } from './api';
@@ -219,7 +219,7 @@ function App() {
       {/* Header */}
       <header className="app-header">
         <div className="logo-container">
-          <Youtube className="logo-icon" />
+          <Video className="logo-icon" />
           <h1 className="logo-text">Thumbnail AI</h1>
         </div>
         <div className="status-indicator">
