@@ -37,7 +37,7 @@ class ThumbnailResponse(BaseModel):
     variants: dict | None = None
 
 class JobResponse(BaseModel):
-    id: int
+    id: str
     prompt: str
     num_thumbnails: int
     headshot_url: str
