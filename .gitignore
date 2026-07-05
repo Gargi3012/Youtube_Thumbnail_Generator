@@ -1,0 +1,25 @@
+# Environments
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+backend/venv/
+.venv/
+backend/.venv/
+env/
+backend/env/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
